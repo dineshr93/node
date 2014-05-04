@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 http.createServer(function (request, response) {
-fs.readFile('grid.html','utf8', function (err, data) {
+fs.readFile('index.html','utf8', function (err, data) {
 if (err){
 response.write('unable to load the requested file');}
 else{
