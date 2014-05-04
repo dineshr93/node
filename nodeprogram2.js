@@ -3,7 +3,7 @@ var fs = require('fs');
 http.createServer(function (request, response) {
 fs.readFile('index.html','utf8', function (err, data) {
 if (err){
-response.write('unable to load the requested file');}
+response.write('unable ');}
 else{
 response.writeHead(200, {'Content-Type': 'text/html'});
 response.write(data);
